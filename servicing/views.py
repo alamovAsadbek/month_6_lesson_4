@@ -24,3 +24,8 @@ def service_page_view(request):
 # booking page
 def booking_page_view(request):
     return render(request, 'booking.html')
+
+
+# team page
+def team_page_view(request):
+    return render(request, 'team.html')
