@@ -29,3 +29,8 @@ def booking_page_view(request):
 # team page
 def team_page_view(request):
     return render(request, 'team.html')
+
+
+# testimonial page
+def testimonial_page_view(request):
+    return render(request, 'testimonial.html')
