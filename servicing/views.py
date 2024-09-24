@@ -19,3 +19,8 @@ def contact_page_view(request):
 # services page
 def service_page_view(request):
     return render(request, 'service.html')
+
+
+# booking page
+def booking_page_view(request):
+    return render(request, 'booking.html')
