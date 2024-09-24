@@ -14,3 +14,8 @@ def about_page_view(request):
 # contact page
 def contact_page_view(request):
     return render(request, 'contact.html')
+
+
+# services page
+def service_page_view(request):
+    return render(request, 'service.html')
