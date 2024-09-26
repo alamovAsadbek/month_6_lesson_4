@@ -2,13 +2,15 @@ from django.shortcuts import render
 
 from feedback.models import FeedbackModel
 from servicing.models import ServiceModel
+from technicians.models import TechnicianModel
 
 
 # home page
 def home_page_view(request):
     context = {
         'servicing': ServiceModel.objects.all(),
-        'feedback': FeedbackModel.objects.all()
+        'feedback': FeedbackModel.objects.all(),
+        'technician': TechnicianModel.objects.all()
     }
     return render(request, 'index.html', context)
 
