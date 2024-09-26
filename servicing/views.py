@@ -1,5 +1,7 @@
 from django.shortcuts import render
 
+from servicing.models import ServiceModel
+
 
 # home page
 def home_page_view(request):
@@ -18,7 +20,10 @@ def contact_page_view(request):
 
 # services page
 def service_page_view(request):
-    return render(request, 'service.html')
+    context = {
+        'content': ServiceModel.objects.all()
+    }
+    return render(request, 'service.html', context)
 
 
 # booking page
