@@ -1,14 +1,16 @@
 from django.shortcuts import render
 
+from feedback.models import FeedbackModel
 from servicing.models import ServiceModel
 
 
 # home page
 def home_page_view(request):
     context = {
-        'servicing': ServiceModel.objects.all()
+        'servicing': ServiceModel.objects.all(),
+        'feedback': FeedbackModel.objects.all()
     }
-    return render(request, 'index.html')
+    return render(request, 'index.html', context)
 
 
 # about page
