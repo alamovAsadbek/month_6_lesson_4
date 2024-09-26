@@ -38,4 +38,5 @@ def testimonial_page_view(request):
 
 # 404 error page
 def error_404_view(request, exception):
+    print(exception)
     return render(request, '404.html')
