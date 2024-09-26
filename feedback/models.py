@@ -14,3 +14,6 @@ class FeedbackModel(models.Model):
     class Meta:
         verbose_name_plural = "Feedbacks"
         verbose_name = "Feedback"
+
+    def __str__(self):
+        return self.title
