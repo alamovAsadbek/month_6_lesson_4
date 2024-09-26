@@ -1,7 +1,7 @@
 from django.urls import path
 
 from servicing.views import home_page_view, about_page_view, contact_page_view, service_page_view, booking_page_view, \
-    team_page_view, testimonial_page_view
+    team_page_view, testimonial_page_view, error_404_view
 
 urlpatterns = [
     path('', home_page_view, name='home_page'),
@@ -11,5 +11,5 @@ urlpatterns = [
     path('booking/', booking_page_view, name='booking_page'),
     path('team/', team_page_view, name='team_page'),
     path('testimonial/', testimonial_page_view, name='testimonial_page'),
-    path('404/', home_page_view, name='404_page')  # this page is 404 error page
+    path('404/', error_404_view, name='404_page')  # this page is 404 error page
 ]
