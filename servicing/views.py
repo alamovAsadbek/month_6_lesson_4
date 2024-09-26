@@ -5,6 +5,9 @@ from servicing.models import ServiceModel
 
 # home page
 def home_page_view(request):
+    context = {
+        'servicing': ServiceModel.objects.all()
+    }
     return render(request, 'index.html')
 
 
