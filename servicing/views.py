@@ -34,3 +34,8 @@ def team_page_view(request):
 # testimonial page
 def testimonial_page_view(request):
     return render(request, 'testimonial.html')
+
+
+# 404 error page
+def error_404_view(request, exception):
+    return render(request, '404.html')
