@@ -2,8 +2,6 @@ from django.contrib import admin
 
 from feedback.models import FeedbackModel
 
-admin.site.site_header = 'Admin Panel'
-
 
 @admin.register(FeedbackModel)
 class FeedbackAdmin(admin.ModelAdmin):
