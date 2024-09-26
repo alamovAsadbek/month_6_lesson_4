@@ -26,7 +26,7 @@ INSTALLED_APPS = [
 
     'feedback',
     'servicing',
-    'technicians'
+    'technicians',
 ]
 
 MIDDLEWARE = [
