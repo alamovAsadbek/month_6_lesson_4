@@ -9,6 +9,9 @@ class FeedbackModel(models.Model):
     user_firstname = models.CharField(max_length=200)
     user_lastname = models.CharField(max_length=200)
 
+    def full_name(self):
+        return f"{self.user_firstname} {self.user_lastname}"
+
     created_at = models.DateTimeField(auto_now_add=True)
 
     class Meta:
