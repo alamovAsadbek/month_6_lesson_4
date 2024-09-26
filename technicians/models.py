@@ -15,3 +15,6 @@ class TechnicianModel(models.Model):
     class Meta:
         verbose_name_plural = 'Technicians'
         verbose_name = 'Technician'
+
+    def __str__(self):
+        return self.first_name + " " + self.last_name
