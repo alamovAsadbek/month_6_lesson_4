@@ -2,7 +2,7 @@ from django.db import models
 
 
 class FeedbackModel(models.Model):
-    tittle = models.CharField(max_length=200)
+    title = models.CharField(max_length=200)
     message = models.TextField()
     email = models.EmailField()
     status = models.BooleanField(default=False)
