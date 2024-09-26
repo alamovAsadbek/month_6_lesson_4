@@ -13,3 +13,6 @@ class ServiceModel(models.Model):
     class Meta:
         verbose_name_plural = 'Services'
         verbose_name = 'Service'
+
+    def __str__(self):
+        return self.name
