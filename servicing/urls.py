@@ -11,6 +11,5 @@ urlpatterns = [
     path('booking/', booking_page_view, name='booking_page'),
     path('team/', team_page_view, name='team_page'),
     path('testimonial/', testimonial_page_view, name='testimonial_page'),
-    path('contact/', contact_page_view, name='contact_page')
     path('404/', home_page_view, name='404_page')  # this page is 404 error page
 ]
